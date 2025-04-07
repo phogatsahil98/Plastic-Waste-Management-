@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plastic Credit Blockchain System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Plastic Credit Blockchain System</h1>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#submit">Submit Plastic</a></li>
+                <li><a href="#wallet">My Wallet</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="dashboard">
+            <h2>Recycling Dashboard</h2>
+            <div id="statistics">
+                <!-- Dynamic content will load here -->
+            </div>
+        </section>
+
+        <section id="submit">
+            <h2>Submit Plastic</h2>
+            <form id="submitForm">
+                <label for="plasticType">Type of Plastic:</label>
+                <select id="plasticType" required>
+                    <option value="PET">PET</option>
+                    <option value="HDPE">HDPE</option>
+                    <option value="PVC">PVC</option>
+                </select>
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" step="0.01" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="wallet">
+            <h2>My Wallet</h2>
+            <button id="connectWallet">Connect Wallet</button>
+            <div id="walletInfo">
+                <!-- User wallet details will load here -->
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Plastic Credit Blockchain System</p>
+    </footer>
+</body>
+</html>
